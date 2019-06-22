@@ -1,0 +1,28 @@
+#bug img{
+    content: url('../images/bug.png');
+    width: 30px;
+    height: 30px; 
+    overflow: hidden; 
+}
+
+#bug img:hover{
+    content: url('../images/bug-white.png');
+}
+
+.fas{
+    padding-left: 20px
+}
+
+.menu-icon{
+    overflow: hidden;
+}
+
+#error section {
+    width: 80%;
+    color: #727C85;
+    margin: auto;
+    text-align: center;
+}
+ #error{
+    margin-top: 400px;
+ }

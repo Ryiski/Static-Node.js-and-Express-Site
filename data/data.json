@@ -1,0 +1,101 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "project_name": "Random-Quote-Generator",
+            "description": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link": "https://adel-ak.github.io/Random-Quote-Generator/",
+            "github_link": "https://github.com/Adel-ak/Random-Quote-Generator",
+            "image_urls": [
+                "../static/images/unit1/rsz_mainp.jpg",
+                "../static/images/unit1/mainp.jpg",
+                "../static/images/unit1/p1.jpg",
+                "../static/images/unit1/p2.jpg",
+                "../static/images/unit1/p3.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "List-Pagination-and-Filtering",
+            "description": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link": "https://adel-ak.github.io/List-Pagination-and-Filtering/",
+            "github_link": "https://github.com/Adel-ak/List-Pagination-and-Filtering",
+            "image_urls": [
+                "../static/images/unit2/rsz_mainp.jpg",
+                "../static/images/unit2/mainp.jpg",
+                "../static/images/unit2/p1.jpg",
+                "../static/images/unit2/p2.jpg",
+                "../static/images/unit2/p3.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Interactive-Form",
+            "description": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "jQuery"
+            ],
+            "live_link": "https://adel-ak.github.io/Interactive-Form/",
+            "github_link": "https://github.com/Adel-ak/Interactive-Form",
+            "image_urls": [
+                "../static/images/unit3/rsz_mainp.jpg",
+                "../static/images/unit3/mainp.jpg",
+                "../static/images/unit3/p1.jpg",
+                "../static/images/unit3/p2.jpg",
+                "../static/images/unit3/p3.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Ready Phrase Hunter",
+            "description": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link": " https://adel-ak.github.io/OOP-Game-Show-App/",
+            "github_link": "https://github.com/Adel-ak/OOP-Game-Show-App",
+            "image_urls": [
+                "../static/images/unit4/rsz_mainp.jpg",
+                "../static/images/unit4/mainp.jpg",
+                "../static/images/unit4/p1.jpg",
+                "../static/images/unit4/p2.jpg",
+                "../static/images/unit4/p3.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "project_name": "Employee Directory",
+            "description": "",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "AJAX"
+            ],
+            "live_link": "https://adel-ak.github.io/Public-API-Requests/",
+            "github_link": "https://github.com/Adel-ak/Public-API-Requests",
+            "image_urls": [
+                "../static/images/unit5/rsz_mainp.jpg",
+                "../static/images/unit5/mainp.jpg",
+                "../static/images/unit5/p1.jpg",
+                "../static/images/unit5/p2.jpg",
+                "../static/images/unit5/p3.jpg"
+            ]
+        }
+    ]
+}

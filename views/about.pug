@@ -1,0 +1,44 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
+        h1 Adel ak
+        p.lead.text-light
+          | Full Stack JavaScript Developer.
+        //- Replace the boilerplate below with your Elevator pitch below.
+        .portfolio-bio
+          p
+            | This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position. 
+            | This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position.
+            | This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position.
+      .cell.portfolio-meta.small-6.medium-2.large-3
+        h6 Skills
+        //- Replace the text in the li tags below with your own skills.  At this point, you should be able to list at least ten skills.
+        ul
+          li HTML
+          li CSS
+          li JS
+          li jQuery
+          li Nodejs
+          li Express
+          li Debugging 
+        h6 Contact Info
+        ul
+          li 555-555-1234
+          li adoolak@gmail.com
+        a.button.expanded(href='https://www.linkedin.com/in/adel-a-k-249027189/' target="_blank") 
+          i.fa(style='font-size:24px;color:#0077B5') &#xf08c;
+          |   LinkedIn
+        a.button.expanded(href='https://github.com/Adel-ak' target="_blank") 
+          i.fa(style='font-size:24px') &#xf09b;
+          |   GitHub
+        a.button.expanded(href='https://twitter.com/Adel_xoxo' target="_blank") 
+          i.fa(style='font-size:24px;color:#1DA1F2') &#xf099;
+          |   Twitter 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  

@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+    div#error.grid-container
+        section
+            h1= `${error.status + ":" + error.message}`
+            h5= `${url}`
+            pre= error.stack
+            a.button.primary.large(href='/') Go Home
