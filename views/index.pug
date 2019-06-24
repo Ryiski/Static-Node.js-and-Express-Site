@@ -1,5 +1,9 @@
 extends layout.pug
 
+block bgimage
+  div(style="text-align: right")
+    img#bg(src="https://achievement-images.teamtreehouse.com/javascript-loops-stage3.png", alt="")
+    
 block content 
   article.grid-container.portfolio-intro
     div
@@ -15,5 +19,3 @@ block content
           a(href=`/project/${val.id}`)
             img.thumbnail(src=`${val.image_urls[0]}`)
             h5= `${val.project_name}`
-
-      

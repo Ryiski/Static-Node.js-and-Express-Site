@@ -24,5 +24,42 @@
     text-align: center;
 }
  #error{
-    margin-top: 400px;
+    padding-top: 200px;
+    height: 100%;
  }
+
+ label{
+    font-size: 1.5rem;
+ }
+
+ body{
+     background-repeat: no-repeat;
+     overflow-x: hidden;
+     background-color: rgba(255, 255, 255, 0.6);
+    }
+#bg{
+    transform: rotate(-30deg);
+    /* float: right; */
+    position: fixed;
+    height: 90%;
+    right: -100px;
+    bottom: -150px;
+    z-index:-1;
+}
+
+.top{
+    background-color: rgb(83, 77, 77);
+    max-width: 200px;
+    border-radius: 4px;
+    padding: 0.4rem;
+    font-size: 20px;
+    color: white;
+  }
+
+  .portfolio-me a{
+    border-bottom: none;
+  }
+
+  .has-tip{
+      margin-right: 140px;
+  }

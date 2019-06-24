@@ -1,0 +1,35 @@
+extends layout.pug
+
+block bgimage
+  div(style="text-align: right")
+    img#bg(src="https://achievement-images.teamtreehouse.com/javascript-loops-stage3.png", alt="")
+
+block content 
+    nav.grid-container.portfolio-breadcrumb
+        a(href='/') ← Back
+    .grid-container.portfolio-intro.portfolio-project
+        .grid-x
+            .cell.small-6.medium-9.large-9
+
+                //- Use interpolation to dynamically add the project title.
+                h1 No one's perfect.
+                h5 No matter what we do, we are going to produce code that has bugs in it from time to time. if you found a bug that i haven't noticed let me know about it and i'll get to it asap.
+                p.lead.text-light Thank you.
+        #contact-panel.contact-panel(data-toggler='.is-active')
+            a.contact-panel-button(data-toggle='contact-panel')
+            form(action='', method='')
+                .row
+                label
+                    | Name *
+                    input(type='text', name='username', placeholder='Name')
+                .row
+                label
+                    | Email *
+                    input(type='email', name='usermail', placeholder='example@email.com')
+                .row
+                label
+                    | Message *
+                    textarea(placeholder='Describe the bug(s)', name='message',rows='8')
+                .contact-panel-actions
+                button.secondary.button.large(type='button') Submit
+        

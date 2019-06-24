@@ -12,6 +12,8 @@ html(class="no-js" lang="en" dir="ltr")
     link(rel='stylesheet', href='/static/css/app.css')
     link(rel='stylesheet', href='/static/css/style.css')
   body
+    block bgimage
+      
     #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
       .grid-y.grid-padding-x(style='height: 100%;')
         block sidebar
@@ -23,6 +25,8 @@ html(class="no-js" lang="en" dir="ltr")
             p.text-light
               | Full Stack Web Dev / Coding Machine / IT enthusiast
             a(href='/about') Learn More →
+          a(href='/report', style="font-size: 10px" data-tooltip data-position="right" data-alignment="top" data-options="disable_for_touch:true" class="has-tip [tip-top tip-bottom tip-left tip-right]" title='beta feature') Report bug  
+            img(src="../static/images/bug-white.png", style="height: 25px; width: 25px;", alt="")
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
@@ -30,6 +34,7 @@ html(class="no-js" lang="en" dir="ltr")
           span.title-bar-title
             i.fas(style='font-size:18px') &#xf109; + Adel ak = {DEV}
       block content
+  
   script(src='/static/js/vendor/jquery.js')
   script(src='/static/js/vendor/what-input.js')
   script(src='/static/js/vendor/foundation.js')
