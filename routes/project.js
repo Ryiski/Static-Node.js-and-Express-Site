@@ -1,5 +1,5 @@
-/* eslint-disable new-cap */
 const express = require('express');
+/* eslint-disable new-cap */
 const router = express.Router();
 const { projects } = require('../data/data.json');
 
@@ -25,9 +25,8 @@ router.get('/:reqId', (req, res) => {
         return res.render('error');
     }
     // if reqId id is a match, render project.pug and show requested project
-    req.query = 'test';
-    const display = projects[reqId - 1];
-    res.render('project', { display });
+    res.locals.display = projects[reqId - 1];
+    res.render('project');
 });
 
 module.exports = router;

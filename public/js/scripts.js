@@ -1,9 +1,10 @@
 'use strict';
 $(document).foundation();
 
+// array of icon images
 let images;
 
-// fetch error handler
+// get fetch error handler
 const handleErrors = (res) => {
     if (!res.ok) {
         console.error(response.statusText);
@@ -31,6 +32,7 @@ setInterval(() => {
     $('#bg').fadeIn(2000);
 }, 10000);
 
+// post fetch error handler
 const checkStatus = (response) => {
     if (response.ok) {
         return Promise.resolve(response);
@@ -39,19 +41,27 @@ const checkStatus = (response) => {
     }
 };
 
-document.querySelector('button.large').addEventListener('click', () => {
-    const name = document.querySelector('input[name="username"]');
-    const mail = document.querySelector('input[name="usermail"]');
-    const text = document.querySelector('textarea');
+const reportButton = document.querySelector('button.large');
 
-    fetch('/report', {
-        method: 'POST',
-        headers: new Headers({ 'Content-Type': 'application/json' }),
-        body: JSON.stringify({ username: name.value, usermail: mail.value, message: text.value }),
-    })
-        .then(checkStatus)
-        .catch((err) => console.log(err));
-    name.value = '';
-    mail.value = '';
-    text.value = '';
-});
+// to avoid error in console check for reportButton then add EventListener if its true
+if (reportButton) {
+    reportButton.addEventListener('click', () => {
+        const name = document.querySelector('input[name="username"]');
+        const mail = document.querySelector('input[name="usermail"]');
+        const text = document.querySelector('textarea');
+        const postOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username: name.value, usermail: mail.value, message: text.value }),
+        };
+
+        // post input values to report path
+        fetch('/report', postOptions)
+            .then(checkStatus)
+            .catch((err) => console.log(err));
+        // empty from once
+        name.value = '';
+        mail.value = '';
+        text.value = '';
+    });
+}

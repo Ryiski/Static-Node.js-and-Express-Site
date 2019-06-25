@@ -3,7 +3,7 @@
         {
             "id": 1,
             "project_name": "Random-Quote-Generator",
-            "description": "",
+            "description": "An app that displays random famous quotes with the click of a button or Generated automatically after a few seconds.",
             "technologies": [
                 "HTML",
                 "CSS",
@@ -22,7 +22,7 @@
         {
             "id": 2,
             "project_name": "List-Pagination-and-Filtering",
-            "description": "",
+            "description": "A dynamic pagination & real time filtering to enhance the usability of a web page.",
             "technologies": [
                 "HTML",
                 "CSS",
@@ -41,7 +41,7 @@
         {
             "id": 3,
             "project_name": "Interactive-Form",
-            "description": "",
+            "description": " An interactive registration user-friendly form for a fictional conference called 'FullStack Conf'.",
             "technologies": [
                 "HTML",
                 "CSS",
@@ -61,7 +61,7 @@
         {
             "id": 4,
             "project_name": "Ready Phrase Hunter",
-            "description": "",
+            "description": "A Phrase gussing game mixture of Wheel of Fortune (TV Show) and Ready Player one (Movie)",
             "technologies": [
                 "HTML",
                 "CSS",
@@ -80,7 +80,7 @@
         {
             "id": 5,
             "project_name": "Employee Directory",
-            "description": "",
+            "description": "A fictional company called GAFFER, a distributed company with remote employees working all over the world.",
             "technologies": [
                 "HTML",
                 "CSS",

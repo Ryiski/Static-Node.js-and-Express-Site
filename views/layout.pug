@@ -19,20 +19,25 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img.thumbnail(src='https://placehold.it/550x350')
+            img.thumbnail(src='../static/images/adelak.jpg')
           .cell.auto
             h5 &lt&gt Adel ak &lt/&gt
             p.text-light
-              | Full Stack Web Dev / Coding Machine / IT enthusiast
+              | Full Stack Web Dev / IT enthusiast
             a(href='/about') Learn More →
-          a(href='/report', style="font-size: 10px" data-tooltip data-position="right" data-alignment="top" data-options="disable_for_touch:true" class="has-tip [tip-top tip-bottom tip-left tip-right]" title='beta feature') Report bug  
+          a#report(href='/report', style="font-size: 10px") Report bug  
             img(src="../static/images/bug-white.png", style="height: 25px; width: 25px;", alt="")
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
           span.title-bar-title
-            i.fas(style='font-size:18px') &#xf109; + Adel ak = {DEV}
+            i.fas(style='font-size:18px') &#xf109; + Adel ak = 
+              strong { 
+              em DEV
+              strong  }
+            
+              
       block content
   
   script(src='/static/js/vendor/jquery.js')

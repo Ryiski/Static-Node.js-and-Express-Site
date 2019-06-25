@@ -1,65 +1,98 @@
-#bug img{
-    content: url('../images/bug.png');
-    width: 30px;
-    height: 30px; 
-    overflow: hidden; 
+label {
+	font-size: 1.5rem;
 }
 
-#bug img:hover{
-    content: url('../images/bug-white.png');
+body {
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
-.fas{
-    padding-left: 20px
+strong{
+	color: yellow;
+	font-size: 25px
+}
+em{
+	color: black;
 }
 
-.menu-icon{
-    overflow: hidden;
+#bug img {
+	content: url('../images/bug.png');
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+}
+
+#bug img:hover {
+	content: url('../images/bug-white.png');
 }
 
 #error section {
-    width: 80%;
-    color: #727C85;
-    margin: auto;
-    text-align: center;
-}
- #error{
-    padding-top: 200px;
-    height: 100%;
- }
-
- label{
-    font-size: 1.5rem;
- }
-
- body{
-     background-repeat: no-repeat;
-     overflow-x: hidden;
-     background-color: rgba(255, 255, 255, 0.6);
-    }
-#bg{
-    transform: rotate(-30deg);
-    /* float: right; */
-    position: fixed;
-    height: 90%;
-    right: -100px;
-    bottom: -150px;
-    z-index:-1;
+	width: 80%;
+	color: #727C85;
+	margin: auto;
+	text-align: center;
 }
 
-.top{
-    background-color: rgb(83, 77, 77);
-    max-width: 200px;
-    border-radius: 4px;
-    padding: 0.4rem;
-    font-size: 20px;
-    color: white;
-  }
+#error {
+	padding-top: 200px;
+	height: 100%;
+}
 
-  .portfolio-me a{
-    border-bottom: none;
-  }
+#bg {
+	transform: rotate(-30deg);
+	/* float: right; */
+	position: fixed;
+	height: 90%;
+	right: -100px;
+	bottom: -150px;
+	z-index: -1;
+}
 
-  .has-tip{
-      margin-right: 140px;
+#report:hover:after {
+	content: " - beta feature";
+	background-color: rgba(0, 0, 0, 0.562);
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px
+}
+
+.top {
+	background-color: rgb(83, 77, 77);
+	max-width: 200px;
+	border-radius: 4px;
+	padding: 0.4rem;
+	font-size: 20px;
+	color: white;
+}
+
+.portfolio-me a {
+	border-bottom: none;
+}
+
+.has-tip {
+	margin-right: 140px;
+}
+
+.portfolio-me {
+	background: #5f0023
+}
+
+.title-bar {
+	background: #5f0023
+}
+
+.fas {
+	padding-left: 20px
+}
+
+.menu-icon {
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+	#bg {
+		height: 60%;
+	}
   }
