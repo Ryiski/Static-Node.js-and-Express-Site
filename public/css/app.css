@@ -15,6 +15,22 @@ strong{
 em{
 	color: black;
 }
+.button.expanded{
+	width: 121px;
+}
+
+#message{
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 50px;
+	margin-right: 60px;
+	border-radius: 15px
+}
 
 #bug img {
 	content: url('../images/bug.png');

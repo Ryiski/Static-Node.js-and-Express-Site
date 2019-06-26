@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // eslint-disable-next-line no-unused-vars
 const { data } = require('./data/data.json');
-const routes = require('./routes/index');
+const routes = require('./routes/paths');
 const projectRoutes = require('./routes/project');
 
 const app = express();
@@ -30,6 +30,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.locals.url = `${req.protocol}://${req.get('host') + req.originalUrl}`;
+    console.error(`nice try but ${res.locals.url} does not exist`);
     res.status(err.status).render('error');
 });
 

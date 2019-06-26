@@ -63,5 +63,9 @@ if (reportButton) {
         name.value = '';
         mail.value = '';
         text.value = '';
+        $('#message')
+            .slideDown()
+            .delay(2500)
+            .slideUp();
     });
 }

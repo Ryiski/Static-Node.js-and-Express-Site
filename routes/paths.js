@@ -32,7 +32,7 @@ router.post('/report', (req, res) => {
     Email :- ${req.body.usermail},
     Report :- ${req.body.message}
     }
-    `,
+    `, // error handler if nothing was writen to txt file
         (err) => {
             if (err) throw err;
         }
