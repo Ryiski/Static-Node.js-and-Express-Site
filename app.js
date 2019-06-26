@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.locals.url = `${req.protocol}://${req.get('host') + req.originalUrl}`;
-    console.error(`nice try but ${res.locals.url} does not exist`);
+    console.log(`nice try but ${res.locals.url} does not exist`);
     res.status(err.status).render('error');
 });
 
