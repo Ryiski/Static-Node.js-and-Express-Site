@@ -8,6 +8,9 @@
     "start": "node app.js",
     "autors": "nodemon app.j-e pug,js,css"
   },
+  "engines": {
+    "node": "10.16.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Adel-ak/Static-Node.js-and-Express-Site.git"
