@@ -34,6 +34,6 @@ Added report path where users can help me with spoting bugs if i havent noticed 
 
 The messages sended will be saved in a txt file which can be found in the data folder.
 
-<h6><span style="color:red">NOTE</span>:-
+<h6><span style="color:red">NOTE</span>:-</h6>
 
-This is a beta features it may be removed or replaced in the near future.</h6>
+<h6>This is a beta feature it may be removed or replaced in the near future.</h6>
