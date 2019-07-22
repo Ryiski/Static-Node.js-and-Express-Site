@@ -33,36 +33,54 @@ setInterval(() => {
 }, 10000);
 
 // post fetch error handler
-const checkStatus = (response) => {
-    if (response.ok) {
-        return Promise.resolve(response);
-    } else {
-        return Promise.reject(new Error(response.statusText));
-    }
-};
+// const checkStatus = (response) => {
+//     if (response.ok) {
+//         return Promise.resolve(response);
+//     } else {
+//         return Promise.reject(new Error(response.statusText));
+//     }
+// };
 
 const reportButton = document.querySelector('button.large');
 
 // to avoid error in console check for reportButton then add EventListener if its true
 if (reportButton) {
+    const name = document.querySelector('input[name="username"]');
+    const mail = document.querySelector('input[name="usermail"]');
+    const text = document.querySelector('textarea');
     reportButton.addEventListener('click', () => {
-        const name = document.querySelector('input[name="username"]');
-        const mail = document.querySelector('input[name="usermail"]');
-        const text = document.querySelector('textarea');
-        const postOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username: name.value, usermail: mail.value, message: text.value }),
-        };
+        // const postOptions = {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify({ username: name.value, usermail: mail.value, message: text.value }),
+        // };
 
-        // post input values to report path
-        fetch('/report', postOptions)
-            .then(checkStatus)
-            .catch((err) => console.log(err));
-        // empty from once
-        name.value = '';
-        mail.value = '';
-        text.value = '';
+        // // post input values to report path
+        // fetch('/report', postOptions)
+        //     .then(checkStatus)
+        //     .catch((err) => console.log(err));
+        // // empty from once
+        // name.value = '';
+        // mail.value = '';
+        // text.value = '';
+        // eslint-disable-next-line require-jsdoc
+        function tester() {
+            const firebaseConfig = {
+                apiKey: 'AIzaSyDg0Yq4tClp8AxZQhV2FfsTfBk70qqwRtI',
+                authDomain: 'ad3lak.firebaseapp.com',
+                databaseURL: 'https://ad3lak.firebaseio.com',
+                projectId: 'ad3lak',
+                storageBucket: 'ad3lak.appspot.com',
+                messagingSenderId: '507666554242',
+                appId: '1:507666554242:web:340a0e55bc9a399a',
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            const fbr = firebase.database().ref();
+            fbr.child(name.value).set({ usermail: mail.value, message: text.value });
+        }
+        tester();
         $('#message')
             .slideDown()
             .delay(2500)

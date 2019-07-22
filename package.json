@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "autors": "nodemon app.j-e pug,js,css"
+    "autors": "nodemon app.js -e pug,js,css"
   },
   "engines": {
     "node": "10.16.0"
