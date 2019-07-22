@@ -66,13 +66,13 @@ if (reportButton) {
         // eslint-disable-next-line require-jsdoc
         function tester() {
             const firebaseConfig = {
-                apiKey: 'AIzaSyDg0Yq4tClp8AxZQhV2FfsTfBk70qqwRtI',
-                authDomain: 'ad3lak.firebaseapp.com',
-                databaseURL: 'https://ad3lak.firebaseio.com',
-                projectId: 'ad3lak',
-                storageBucket: 'ad3lak.appspot.com',
-                messagingSenderId: '507666554242',
-                appId: '1:507666554242:web:340a0e55bc9a399a',
+                apiKey: '',
+                authDomain: ',
+                databaseURL: '',
+                projectId: '',
+                storageBucket: '',
+                messagingSenderId: '',
+                appId: '',
             };
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
